@@ -5,4 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  padding: 30px;
+  pb: 27px;
+  text-align: center;
+  box-shadow: 2px 2px 0.8em rgb(192, 191, 191);
+}
+header img.logo {
+  width: 300px;
+}
+
 /*# sourceMappingURL=style.css.map */
