@@ -9,10 +9,31 @@ header {
   padding: 30px;
   pb: 27px;
   text-align: center;
-  box-shadow: 2px 2px 0.8em rgb(192, 191, 191);
+  box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.459);
+  position: relative;
+  z-index: 7;
 }
 header img.logo {
   width: 300px;
+}
+
+.localisation {
+  padding: 30px;
+  background-color: #EAEAEA;
+  text-align: center;
+  z-index: 1;
+}
+.localisation__input {
+  border: none;
+  background-color: initial;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  width: 25%;
+  font-weight: bold;
+}
+.localisation__logo {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
