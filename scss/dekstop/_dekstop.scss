@@ -1,0 +1,67 @@
+@media screen and (min-width: 900px) {
+    #main-wrapper {
+        padding-top: 95px;
+    }
+    
+    header {
+        background: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .localisation {
+        border-radius: 15px 15px 0 0;
+        &__input {
+            width: 20%;
+        }
+    }
+
+    .exploration {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .fonctionnement {
+        &__group {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &__step {
+            &--number {
+            top: -15px;
+            left: 120px;
+            width: 25px;
+            height: 25px;
+            padding-top: 5px;
+            font-size: 0.8em;
+            }
+        }
+    }
+
+    .restaurants {
+        border-radius: 50px 50px 0 0;
+    }
+
+    .ensemble__cards {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .cards {
+        margin: 10px;
+        width: 50%;
+        &__heart {
+            top: 25px;
+        }
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        &__logo {
+            text-align: center;
+        }
+    }
+}
