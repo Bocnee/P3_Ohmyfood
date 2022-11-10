@@ -1,0 +1,61 @@
+.apparition {
+    &__1 {
+        animation: apparition 3s;
+        animation-fill-mode: forwards;
+    }
+    &__2 {
+        animation: apparition 3s 300ms;
+        animation-fill-mode: forwards;
+    }
+    &__3 {
+        animation: apparition 3s 600ms;
+        animation-fill-mode: forwards;
+    }
+    &__4 {
+        animation: apparition 3s 900ms;
+        animation-fill-mode: forwards;
+    }
+    &__5 {
+        animation: apparition 3s 1200ms;
+        animation-fill-mode: forwards;
+    }
+    &__6 {
+        animation: apparition 3s 1500ms;
+        animation-fill-mode: forwards;
+    }
+    &__7 {
+        animation: apparition 3s 1800ms;
+        animation-fill-mode: forwards;
+    }
+    &__8 {
+        animation: apparition 3s 2100ms;
+        animation-fill-mode: forwards;
+    }
+    &__9 {
+        animation: apparition 3s 2400ms;
+        animation-fill-mode: forwards;
+    }
+    &__10 {
+        animation: apparition 3s 2700ms;
+        animation-fill-mode: forwards;
+    }
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition-delay: 2s;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

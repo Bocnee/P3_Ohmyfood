@@ -65,4 +65,16 @@
             text-align: center;
         }
     }
+
+    .set {
+        &__ensemble {
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+        }
+    }
+
+    .meal {
+        width: 32%;
+    }
 }

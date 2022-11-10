@@ -1,28 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
 body {
   max-width: 1000px;
   margin: auto;
-}
-
-header {
-    padding: 30px;
-    padding-bottom: 27px;
-    text-align: center;
-    box-shadow: 0px 15px 10px -15px lighten($text_lighter, 20);
-    position: relative;
-    z-index: 7;
-    background-color: white;
-    img.logo {
-        width: 200px;
-    }
 }
 
 .localisation {
@@ -58,21 +36,6 @@ header {
   }
   &__paragraph {
     color: darken($primary_color, 50)
-  }
-  &__btn {
-    margin-top: 30px;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background: linear-gradient(0deg, $btn_gadiant_base 0%, darken($btn_gradiant_light, 5) 60%, $btn_gradiant_light 100%);
-    box-shadow: 0px 2px 10px gray;
-    transition: all 1000ms;
-    &:hover {
-      cursor: pointer;
-      box-shadow: none;
-      background: linear-gradient(0deg, lighten($btn_gadiant_base, 5) 0%, $btn_gradiant_light 60%, lighten($btn_gradiant_light, 5) 100%);
-    }
   }
 }
 
@@ -177,33 +140,4 @@ header {
 footer {
   background-color: #353535;
   padding: 20px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 10px;
-  &__logo {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    width: 180px;
-  }
-  &__element {
-    color: white;
-    transition: all 0.5s;
-    &:hover {
-      color: $btn_gradiant_light;
-    }
-    &--icon1 {
-      font-size: 0.8em;
-      font-weight: 600;
-      margin-right: 9px;
-    }
-    &--icon2 {
-      font-size: 0.6em;
-      font-weight: 600;
-      margin-right: 8px;
-    }
-  }
 }

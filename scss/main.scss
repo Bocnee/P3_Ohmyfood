@@ -1,5 +1,5 @@
-@import "./utils/variables.scss";
-@import "./animations/hearts", "./animations/loadingscreen";
-@import "./pages/bg1";
-@import "./pages/accueil", "./pages/pages";
+@import "./utils/variables.scss", "./utils/reset.scss";
+@import "./parts/buttons", "./parts/header__footer";
+@import "./pages/accueil", "./pages/pages", "./pages/bg1", "./pages/bg2", "./pages/bg3", "./pages/bg4";
+@import "./animations/hearts", "./animations/loadingscreen", "./animations/apparitions", "./animations/check";
 @import "./dekstop/dekstop";
