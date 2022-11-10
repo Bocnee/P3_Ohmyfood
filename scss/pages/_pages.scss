@@ -1,0 +1,83 @@
+.header__pages {
+    &__arrow {
+        position: absolute;
+        font-size: 1.7em;
+    }
+}
+
+.menu {
+    padding-top: 45%;
+}
+
+.menucard {
+    background-color: $primary_color;
+    margin-top: 50px;
+    border-radius: 45px 45px 0 0;
+    padding: 40px 25px 15px 25px;
+    &__header {    
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &__title {
+            font-family: Shrikhand, 'Gill Sans', 'Gill Sans MT', cursive;
+            font-size: 2em;
+        }
+        &__heart {
+            position: relative;
+            font-size: 2.2em;
+            margin-left: 10px;
+            &--full {
+                position: absolute;
+            }
+        }
+    }
+}
+
+.set {
+    padding: 30px 0 0 0;
+    &__title {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    &__ensemble {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    &__cards {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        @include cards-boxshadow;
+        max-height: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &__title {
+            font-weight: 600;
+            font-size: larger;
+        }
+        &__ensemble {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &__price {
+            font-weight: 600;
+        }
+        &__line {
+            background-color: $background_new;
+            height: 4px;
+            margin-bottom: 20px;
+            width: 3rem;
+        }
+    }
+}

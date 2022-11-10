@@ -1,0 +1,16 @@
+$primary_color: #F7F7F7;
+$text_lighter: rgb(77, 73, 73);
+$btn_gadiant_base: #A35BDC;
+$btn_gradiant_light: #EE74DB;
+$highlight: #F5EDFF;
+$text_highlight: #9152DB;
+$text_new: #0E8F70;
+$background_new: #99E2D0;
+
+@mixin cards-boxshadow {
+    box-shadow: 0px 3px 15px darken($primary_color, 10);
+}
+
+@mixin cards-hboxshadow {
+    box-shadow: 0px 3px 15px darken($primary_color, 20);
+}

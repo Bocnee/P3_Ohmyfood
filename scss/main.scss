@@ -1,3 +1,6 @@
-@import "./pages/_accueil";
+@import "./utils/variables.scss";
+@import "./animations/hearts";
+@import "./pages/bg1";
+@import "./pages/accueil", "./pages/pages";
 @import "./dekstop/dekstop";
-@import "./loading/_loadingscreen";
+@import "./loading/loadingscreen";

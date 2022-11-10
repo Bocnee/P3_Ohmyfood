@@ -2,19 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     color: black;
     text-decoration: none;
 }
-
-$primary_color: #F7F7F7;
-$text_lighter: rgb(77, 73, 73);
-$btn_gadiant_base: #A35BDC;
-$btn_gradiant_light: #EE74DB;
-$highlight: #F5EDFF;
-$text_highlight: #9152DB;
-$text_new: #0E8F70;
-$background_new: #99E2D0;
 
 body {
   max-width: 1000px;
@@ -28,6 +19,7 @@ header {
     box-shadow: 0px 15px 10px -15px lighten($text_lighter, 20);
     position: relative;
     z-index: 7;
+    background-color: white;
     img.logo {
         width: 200px;
     }
@@ -100,7 +92,7 @@ header {
     background-color: $primary_color;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0px 3px 15px darken($primary_color, 10);
+    @include cards-boxshadow;
     font-weight: 500;
     position: relative;
     transform: scale(1);
@@ -113,7 +105,7 @@ header {
       background-color: $highlight;
       cursor: pointer;
       transform: scale(1.01);
-      box-shadow: 0px 3px 15px darken($primary_color, 20);
+      @include cards-hboxshadow;
       i {
         color: $text_highlight;
       }
@@ -153,11 +145,11 @@ header {
   width: 100%;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 0px 3px 15px darken($primary_color, 10);
+  @include cards-boxshadow;
   position: relative;
   transition: all 0.5s;
   &:hover {
-    box-shadow: 0px 3px 15px darken($primary_color, 30);
+    @include cards-hboxshadow;
     transform: scale(1.01);
   }
   &__img {
@@ -179,26 +171,6 @@ header {
   &__description {
     margin: 15px;
     position: relative;
-  }
-  &__heart {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 1.5rem;
-    &:hover + &--full {
-      transition: all 1s;
-      transform-origin: 100% 100%;
-      opacity: 1;
-      transform: scaleY(1);
-    }
-    &--full {
-      font-size: 1.5rem;
-      background: linear-gradient(180deg, $btn_gadiant_base 0%, darken($btn_gradiant_light, 5) 80%, $btn_gradiant_light 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scaleY(0);
-      opacity: 0.5;
-    }
   }
 }
 
