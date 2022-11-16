@@ -1,8 +1,8 @@
 .heart {
     position: absolute;
-    top: 0;
-    right: 0;
     font-size: 1.5rem;
+    top: 230px;
+    right: 10px;
     &:hover + &--full {
       transition: all 1s;
       transform-origin: 100% 100%;
