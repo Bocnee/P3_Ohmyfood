@@ -356,6 +356,26 @@ footer {
   opacity: 0.5;
 }
 
+.header__heart {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 10px;
+}
+.header__heart:hover + .header__heart--full {
+  transition: all 1s;
+  transform-origin: 100% 100%;
+  opacity: 1;
+  transform: scaleY(1);
+}
+.header__heart--full {
+  font-size: 1.5rem;
+  background: linear-gradient(180deg, #A35BDC 0%, #eb5dd5 80%, #EE74DB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scaleY(0);
+  opacity: 0.5;
+}
+
 .loading {
   position: fixed;
   height: 100%;

@@ -18,3 +18,23 @@
       opacity: 0.5;
     }
   }
+
+  .header__heart {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 10px;
+    &:hover + &--full {
+      transition: all 1s;
+      transform-origin: 100% 100%;
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    &--full {
+      font-size: 1.5rem;
+      background: linear-gradient(180deg, $btn_gadiant_base 0%, darken($btn_gradiant_light, 5) 80%, $btn_gradiant_light 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transform: scaleY(0);
+      opacity: 0.5;
+  }
+}
