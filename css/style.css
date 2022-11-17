@@ -245,9 +245,14 @@ footer {
   padding: 40px 25px 15px 25px;
 }
 .menucard__header {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+}
+.menucard__header__hrt {
+  position: relative;
+  height: 50px;
+  width: 90px;
 }
 .menucard__header__title {
   font-family: Shrikhand, "Gill Sans", "Gill Sans MT", cursive;
@@ -255,13 +260,6 @@ footer {
 }
 .menucard__header i {
   font-size: 2.2rem;
-}
-.menucard__header__heart {
-  position: relative;
-  margin-left: 10px;
-}
-.menucard__header__heart--full {
-  position: absolute;
 }
 
 .set {

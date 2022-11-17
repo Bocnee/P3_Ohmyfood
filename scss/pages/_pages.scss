@@ -35,22 +35,20 @@
     border-radius: 45px 45px 0 0;
     padding: 40px 25px 15px 25px;
     &__header {    
-        position: relative;
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        &__hrt {
+            position: relative;
+            height: 50px;
+            width: 90px;
+        }
         &__title {
             font-family: Shrikhand, 'Gill Sans', 'Gill Sans MT', cursive;
             font-size: 2em;
         }
         i {
             font-size: 2.2rem;
-        }
-        &__heart {
-            position: relative;
-            margin-left: 10px;
-            &--full {
-                position: absolute;
-            }
         }
     }
 }
