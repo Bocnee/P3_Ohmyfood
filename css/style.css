@@ -248,13 +248,9 @@ footer {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-}
-.menucard__header__hrt {
   position: relative;
-  height: 50px;
-  width: 90px;
 }
-.menucard__header__title {
+.menucard__header title {
   font-family: Shrikhand, "Gill Sans", "Gill Sans MT", cursive;
   font-size: 2em;
 }
