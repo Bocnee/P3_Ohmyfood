@@ -250,7 +250,7 @@ footer {
   overflow: hidden;
   position: relative;
 }
-.menucard__header title {
+.menucard__header__title {
   font-family: Shrikhand, "Gill Sans", "Gill Sans MT", cursive;
   font-size: 2em;
 }

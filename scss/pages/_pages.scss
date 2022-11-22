@@ -38,7 +38,8 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        position: relative;title {
+        position: relative;
+        &__title {
             font-family: Shrikhand, 'Gill Sans', 'Gill Sans MT', cursive;
             font-size: 2em;
         }
