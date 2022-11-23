@@ -19,7 +19,7 @@
 }
 .gradient__btn:hover {
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: 0px 3px 15px #4d4d4d;
   background: linear-gradient(0deg, #af70e0 0%, #EE74DB 60%, #f18be1 100%);
 }
 

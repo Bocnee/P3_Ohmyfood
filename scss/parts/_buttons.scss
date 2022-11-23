@@ -9,7 +9,7 @@
     transition: all 1000ms;
     &:hover {
       cursor: pointer;
-      box-shadow: none;
+      box-shadow: 0px 3px 15px darken(gray,  20);
       background: linear-gradient(0deg, lighten($btn_gadiant_base, 5) 0%, $btn_gradiant_light 60%, lighten($btn_gradiant_light, 5) 100%);
     }
   }
